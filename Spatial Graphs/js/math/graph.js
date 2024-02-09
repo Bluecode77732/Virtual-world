@@ -45,6 +45,20 @@ class Graph {
     }
 
     removeSegment(seg) {
-        this.segments.splice(this.segments)
+        this.segments.splice(this.segments.indexOf(seg), 1);
+    }
+
+    dispose() {
+        this.points.length = 0;
+        this.segments.length = 0;
+    }
+
+    draw(ctx) {
+        for(const seg of this.segments) { /* of? */
+            seg.draw(ctx)
+        }
+        for(const point of this.points) {
+            point.draw(ctx);
+        }
     }
 }
