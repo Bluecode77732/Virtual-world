@@ -12,6 +12,6 @@ class Segment {
         return this.p1.equals(point) || this.p2.equals(point);
     }
 
-
+    
 
 }
