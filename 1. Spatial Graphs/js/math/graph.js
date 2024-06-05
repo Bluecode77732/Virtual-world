@@ -54,7 +54,7 @@ class Graph {
     }
 
     draw(ctx) {
-        for(const seg of this.segments) { /* of? */
+        for(const seg of this.segments) { /* of? Answer : the for loop iterate through the array value of the Graph segments. */
             seg.draw(ctx)
         }
         for(const point of this.points) {
